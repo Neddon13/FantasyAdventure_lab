@@ -1,4 +1,7 @@
 package NPC.Enemy;
 
-public class Troll {
+public class Troll extends EnemyAbs{
+    public Troll(int healthPoints) {
+        super(healthPoints);
+    }
 }

@@ -1,14 +1,8 @@
 package NPC.Support.HealingItems;
 
-public class Potions {
-
-    private int healingValue;
+public class Potions extends HealingItemsAbs {
 
     public Potions(int _healingValue) {
-        this.healingValue = _healingValue;
-    }
-
-    public int getHealingValue() {
-        return healingValue;
+        super(_healingValue);
     }
 }

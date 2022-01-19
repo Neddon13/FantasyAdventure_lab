@@ -9,14 +9,14 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class AxeTest {
-    
-    private Axe axe;
+
+    Axe axe;
 
     @Before
     public void before(){
-        Axe axe = new Axe(150);
+        axe = new Axe(150);
     }
-    
+
     @Test
     public void hasDamage(){
         assertEquals(150, axe.getDamage());

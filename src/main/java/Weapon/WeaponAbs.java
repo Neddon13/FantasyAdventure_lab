@@ -1,6 +1,7 @@
 package Weapon;
 
 import Behaviours.IWeapon;
+import NPC.Enemy.EnemyAbs;
 
 public class WeaponAbs implements IWeapon {
     
@@ -13,5 +14,10 @@ public class WeaponAbs implements IWeapon {
     public int getDamage(){
         return damage;
     }
-    
+
+    @Override
+    public void attack(EnemyAbs enemy) {
+        enemy.takeDamage(getDamage());
+    }
+
 }
