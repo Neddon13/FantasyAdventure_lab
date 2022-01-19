@@ -17,4 +17,8 @@ public class PlayerAbs {
     public int getHealthPoints() {
         return healthPoints;
     }
+
+    public void increaseHealth(int healingValue) {
+        healthPoints += healingValue;
+    }
 }

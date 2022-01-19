@@ -1,6 +1,7 @@
 package NPC.Support.HealingItems;
 
 import Behaviours.IHeal;
+import Player.PlayerAbs;
 
 public abstract class HealingItemsAbs implements IHeal {
 
@@ -15,8 +16,7 @@ public abstract class HealingItemsAbs implements IHeal {
     }
 
     @Override
-    public void heal() {
-        System.out.println("lol");
+    public void heal(PlayerAbs player) {
+        player.increaseHealth(healingValue);
     }
-
 }

@@ -1,4 +1,11 @@
 package Player.Fighter;
 
-public class Knight {
+import Behaviours.IWeapon;
+
+public class Knight extends FighterAbs {
+
+    public Knight(String name, int healthPoints, IWeapon weapon) {
+        super(name, healthPoints, weapon);
+    }
 }
+
