@@ -1,4 +1,8 @@
 package Spells;
 
-public class Fire {
+public class Fire extends SpellAbs {
+    public Fire(int damage) {
+        super(damage);
+
+    }
 }

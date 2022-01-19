@@ -1,4 +1,9 @@
 package Weapon;
 
-public class Sword {
+public class Sword extends WeaponAbs{
+    
+    public Sword(int damage) {
+        super(damage);
+        
+    }
 }
